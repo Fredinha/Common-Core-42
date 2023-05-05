@@ -1,49 +1,29 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_bzero.c                                         :+:      :+:    :+:   */
+/*   ft_putendl_fd.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: fgomes-f <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/04/21 13:23:38 by fgomes-f          #+#    #+#             */
-/*   Updated: 2023/05/05 15:41:04 by fgomes-f         ###   ########.fr       */
+/*   Created: 2023/05/05 12:45:13 by fgomes-f          #+#    #+#             */
+/*   Updated: 2023/05/05 13:03:54 by fgomes-f         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdio.h>
-#include <unistd.h>
-#include <stddef.h>
-#include <string.h>
 
-void	ft_bzero(void *s, size_t n)
+void	ft_putendl_fd(char *s, int fd)
 {
-	char	*help;
-	size_t	i;
-
-	i = 0;
-	help = s;
-	if (n == 0)
-		return ;
-	else
-	{
-		while (i < n)
-		{
-			help[i] = '\0';
-			i++;
-		}
-	}
+	ft_putstr_fd(s, fd);
+	write (fd, "\n", 1);
 }
 
 /*int	main(void)
 {
-	char str[10] = "frederica";
+	char s[5] = "abc";
+	int	fd;
 
-        printf("original string: %s\n", str);
-        ft_bzero(str, 2);
-	//bzero(str, 2);
-        printf("new string: %s\n", str);
-
-        return (0);
+	fd = 1;
+	ft_putendl_fd(s, fd);
+	//printf("%s", s);
 }*/
-

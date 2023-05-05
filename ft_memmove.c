@@ -6,13 +6,14 @@
 /*   By: fgomes-f <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/22 18:31:11 by fgomes-f          #+#    #+#             */
-/*   Updated: 2023/04/24 16:39:52 by fgomes-f         ###   ########.fr       */
+/*   Updated: 2023/05/05 15:55:09 by fgomes-f         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 #include <unistd.h>
 #include <stdio.h>
+#include <string.h>
 
 void	*ft_memmove(void *dest, const void *src, size_t n)
 {
@@ -41,3 +42,18 @@ void	*ft_memmove(void *dest, const void *src, size_t n)
 	}
 	return (dest);
 }
+
+int   main(void)
+{
+        const void *src = "frederica";
+        void *dest = malloc(12);
+
+        printf("original string: %s\n", (char *) src);
+        //memmove(dest, src, 2);
+        ft_memmove(dest, src, 2);
+        printf("new string: %s\n", (char *) dest);
+
+        free (dest);
+        return (0);
+}
+

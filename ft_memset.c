@@ -6,7 +6,7 @@
 /*   By: fgomes-f <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/22 15:25:49 by fgomes-f          #+#    #+#             */
-/*   Updated: 2023/04/22 15:45:30 by fgomes-f         ###   ########.fr       */
+/*   Updated: 2023/05/05 14:23:18 by fgomes-f         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,3 +29,14 @@ void	*ft_memset(void *s, int c, size_t n)
 	}
 	return (s);
 }
+
+/*int	main(void)
+{
+	char str[10] = "frede";
+
+	printf("original: %s\n", str);
+	ft_memset(str, 'F', 2);
+	printf("new string: %s\n", str);
+
+	return (0);
+}*/
