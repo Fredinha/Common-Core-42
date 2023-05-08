@@ -6,13 +6,14 @@
 /*   By: fgomes-f <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/22 18:05:20 by fgomes-f          #+#    #+#             */
-/*   Updated: 2023/04/24 15:39:06 by fgomes-f         ###   ########.fr       */
+/*   Updated: 2023/05/08 15:30:43 by fgomes-f         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 #include <unistd.h>
 #include <stdio.h>
+#include <string.h>
 
 int	ft_memcmp(const void *s1, const void *s2, size_t n)
 {
@@ -31,3 +32,14 @@ int	ft_memcmp(const void *s1, const void *s2, size_t n)
 	}
 	return (0);
 }
+
+/*int	main(void)
+{
+	char	*s1;
+	char	*s2;
+
+	s1 = "a fred e linda";
+	s2 = "a fred e lindb";
+//	printf("%i\n", ft_memcmp(s1, s2, 15));
+	printf("%i\n", memcmp(s1, s2, 15));
+}*/

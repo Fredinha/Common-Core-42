@@ -6,7 +6,7 @@
 /*   By: fgomes-f <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/20 15:33:15 by fgomes-f          #+#    #+#             */
-/*   Updated: 2023/04/20 16:25:36 by fgomes-f         ###   ########.fr       */
+/*   Updated: 2023/05/08 12:36:32 by fgomes-f         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,6 +41,10 @@ int	ft_atoi(const char *nptr)
 	return (atoi * signal);
 }
 
-/*int	main(void)
+/*
+int	main(void)
 {
-*/
+	char test[15] = "   -1234";
+	printf("%i\n", ft_atoi(test));
+//	printf("%i\n", atoi(test));
+}*/

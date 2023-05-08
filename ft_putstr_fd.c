@@ -6,7 +6,7 @@
 /*   By: fgomes-f <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/24 17:41:01 by fgomes-f          #+#    #+#             */
-/*   Updated: 2023/04/24 17:47:12 by fgomes-f         ###   ########.fr       */
+/*   Updated: 2023/05/08 16:30:03 by fgomes-f         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,3 +26,8 @@ void	ft_putstr_fd(char *s, int fd)
 		i++;
 	}
 }
+
+/*int	main(void)
+{
+	ft_putstr_fd("a fred e linda", 1);
+}*/

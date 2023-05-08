@@ -6,7 +6,7 @@
 /*   By: fgomes-f <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/26 13:21:21 by fgomes-f          #+#    #+#             */
-/*   Updated: 2023/04/28 17:30:46 by fgomes-f         ###   ########.fr       */
+/*   Updated: 2023/05/08 19:03:03 by fgomes-f         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -59,3 +59,13 @@ char	*ft_strtrim(char const *s1, char const *set)
 	string = malloc(sizeof(char) * (j - i) + 1);
 	return (ft_build_string(string, s1, i, j));
 }
+
+/*int	main(void)
+{
+	const char *s1;
+	const char *set;
+
+	s1 = "XYZXYYWa fred e lindaZWWWXY";
+	set = "XYZWK";
+	printf("%s", ft_strtrim(s1, set));
+}*/

@@ -6,7 +6,7 @@
 /*   By: fgomes-f <fgomes-f@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/28 15:11:46 by fgomes-f          #+#    #+#             */
-/*   Updated: 2023/05/03 14:28:40 by fgomes-f         ###   ########.fr       */
+/*   Updated: 2023/05/08 16:31:25 by fgomes-f         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -56,7 +56,6 @@ size_t	ft_count_letters(char const *s, char c, size_t j)
 		while (s[i] && s[i] == c)
 			i++;
 	}
-	x = 0;
 	y = 0;
 	while (s[i] && s[i] != c)
 	{

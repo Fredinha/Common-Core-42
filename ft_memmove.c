@@ -6,7 +6,7 @@
 /*   By: fgomes-f <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/22 18:31:11 by fgomes-f          #+#    #+#             */
-/*   Updated: 2023/05/05 15:55:09 by fgomes-f         ###   ########.fr       */
+/*   Updated: 2023/05/08 15:37:27 by fgomes-f         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,7 +43,7 @@ void	*ft_memmove(void *dest, const void *src, size_t n)
 	return (dest);
 }
 
-int   main(void)
+/*int   main(void)
 {
         const void *src = "frederica";
         void *dest = malloc(12);
@@ -56,4 +56,4 @@ int   main(void)
         free (dest);
         return (0);
 }
-
+*/

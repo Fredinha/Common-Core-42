@@ -6,7 +6,7 @@
 /*   By: fgomes-f <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/26 11:52:51 by fgomes-f          #+#    #+#             */
-/*   Updated: 2023/04/26 12:50:41 by fgomes-f         ###   ########.fr       */
+/*   Updated: 2023/05/08 19:08:07 by fgomes-f         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,3 +41,8 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	substring[i] = '\0';
 	return (substring);
 }
+
+/*int	main(void)
+{
+	printf("%s", ft_substr("a fred e linda", 2, 4));
+}*/

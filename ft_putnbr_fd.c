@@ -6,7 +6,7 @@
 /*   By: fgomes-f <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/24 17:49:19 by fgomes-f          #+#    #+#             */
-/*   Updated: 2023/04/26 11:46:31 by fgomes-f         ###   ########.fr       */
+/*   Updated: 2023/05/08 16:26:54 by fgomes-f         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,3 +39,8 @@ void	ft_putnbr_fd(int n, int fd)
 		ft_putchar_fd(n + 48, fd);
 	}
 }
+
+/*int	main(void)
+{
+	ft_putnbr_fd(5263743, 1);
+}*/

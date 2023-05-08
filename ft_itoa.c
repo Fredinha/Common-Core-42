@@ -6,7 +6,7 @@
 /*   By: fgomes-f <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/03 14:40:05 by fgomes-f          #+#    #+#             */
-/*   Updated: 2023/05/03 15:58:25 by fgomes-f         ###   ########.fr       */
+/*   Updated: 2023/05/08 13:05:17 by fgomes-f         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -80,22 +80,8 @@ char	*ft_itoa(int n)
 	return (ft_create_malloc(n, n_of_chars, signal));
 }
 
-/*	string = malloc(sizeof(char) * n_of_chars + 1 + signal);
-	if (!string)
-		return (NULL);
-	string[n_of_chars + signal] = '\0';
-	while (n_of_chars != 0)
-	{
-		n_of_chars--;
-		string[n_of_chars + signal] = (n % 10) + 48;
-		n = n / 10;
-	}
-	if (signal == 1)
-		string[0] = '-';
-	return (string);
-}*/
-
 /*int	main(void)
 {
-	printf("%s\n", ft_itoa(234));
+	printf("%s\n", ft_itoa(23674));
+	printf("%s\n", ft_itoa(-2147483648));
 }*/
