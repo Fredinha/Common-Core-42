@@ -6,7 +6,7 @@
 /*   By: fgomes-f <fgomes-f@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/28 15:11:46 by fgomes-f          #+#    #+#             */
-/*   Updated: 2023/05/08 16:31:25 by fgomes-f         ###   ########.fr       */
+/*   Updated: 2023/05/09 12:56:51 by fgomes-f         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@
 #include <string.h>
 #include <stdio.h>
 
-size_t	ft_count_words(char const *s, char c)
+static size_t	ft_count_words(char const *s, char c)
 {
 	size_t	i;
 	size_t	j;
@@ -37,7 +37,7 @@ size_t	ft_count_words(char const *s, char c)
 	return (j);
 }
 
-size_t	ft_count_letters(char const *s, char c, size_t j)
+static size_t	ft_count_letters(char const *s, char c, size_t j)
 {
 	size_t	x;
 	size_t	i;
@@ -65,7 +65,7 @@ size_t	ft_count_letters(char const *s, char c, size_t j)
 	return (y);
 }
 
-char	**ft_write_words(char **array, size_t n_of_words, const char *s, char c)
+static char	**put_words(char **array, size_t n_of_words, const char *s, char c)
 {
 	size_t	i;
 	size_t	x;
@@ -108,7 +108,7 @@ char	**ft_split(char const *s, char c)
 		i++;
 	}
 	i = 0;
-	return (ft_write_words(array, n_of_words, s, c));
+	return (put_words(array, n_of_words, s, c));
 }
 
 /*int	main(void)

@@ -6,14 +6,14 @@
 /*   By: fgomes-f <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/26 13:21:21 by fgomes-f          #+#    #+#             */
-/*   Updated: 2023/05/08 19:03:03 by fgomes-f         ###   ########.fr       */
+/*   Updated: 2023/05/09 12:51:01 by fgomes-f         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 #include <stdlib.h>
 
-int	ft_is_set(char c, char const *set)
+static int	ft_is_set(char c, char const *set)
 {
 	while (*set)
 	{
@@ -24,7 +24,7 @@ int	ft_is_set(char c, char const *set)
 	return (0);
 }
 
-char	*ft_build_string(char *string, char const *s1, size_t i, size_t j)
+static char	*ft_build_string(char *string, char const *s1, size_t i, size_t j)
 {
 	size_t	x;
 

@@ -6,14 +6,14 @@
 /*   By: fgomes-f <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/03 14:40:05 by fgomes-f          #+#    #+#             */
-/*   Updated: 2023/05/08 13:05:17 by fgomes-f         ###   ########.fr       */
+/*   Updated: 2023/05/09 12:51:32 by fgomes-f         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 #include <unistd.h>
 
-char	*ft_create_malloc(int n, int n_of_chars, int signal)
+static char	*ft_create_malloc(int n, int n_of_chars, int signal)
 {
 	char	*string;
 
@@ -32,7 +32,7 @@ char	*ft_create_malloc(int n, int n_of_chars, int signal)
 	return (string);
 }
 
-char	*ft_special_case(int n)
+static char	*ft_special_case(int n)
 {
 	char	*string;
 
