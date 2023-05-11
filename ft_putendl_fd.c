@@ -6,7 +6,7 @@
 /*   By: fgomes-f <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/05 12:45:13 by fgomes-f          #+#    #+#             */
-/*   Updated: 2023/05/05 13:03:54 by fgomes-f         ###   ########.fr       */
+/*   Updated: 2023/05/11 21:35:45 by fgomes-f         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,10 @@
 
 void	ft_putendl_fd(char *s, int fd)
 {
-	ft_putstr_fd(s, fd);
+	size_t	len;
+
+	len = ft_strlen(s);
+	write(fd, s, len);
 	write (fd, "\n", 1);
 }
 
